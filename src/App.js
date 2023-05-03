@@ -13,7 +13,7 @@ function App() {
     setIsLoading(true);
     try {
       axios
-        .get(`http://de1.api.radio-browser.info/json/stations`)
+        .get(`https://de1.api.radio-browser.info/json/stations/bycountry/japan?order=clickcount&reverse=true`)
         //fetches indian radios in order to most clicked on top
         .then(response => {
           const results = response.data;
