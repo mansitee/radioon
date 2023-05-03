@@ -13,7 +13,7 @@ function App() {
     setIsLoading(true);
     try {
       axios
-        .get(`https://raw.githubusercontent.com/mansitee/radioon/main/src/data.json`)
+        .get(`http://de1.api.radio-browser.info/json/stations`)
         //fetches indian radios in order to most clicked on top
         .then(response => {
           const results = response.data;
